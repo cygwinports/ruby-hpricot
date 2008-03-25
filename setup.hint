@@ -1,0 +1,8 @@
+category: Ruby
+requires: cygwin ruby
+sdesc: "Ruby HTML parser"
+ldesc: "Hpricot is a fast, flexible HTML parser written in C.  It's 
+designed to be very accommodating (like Tanaka Akira's HTree) and to 
+have a very helpful library (like some JavaScript libs -- JQuery, 
+Prototype -- give you.)  The XPath and CSS parser, in fact, is based on 
+John Resig's JQuery."

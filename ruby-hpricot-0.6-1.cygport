@@ -1,0 +1,14 @@
+ORIG_PN="hpricot"
+inherit ruby
+
+DESCRIPTION="Ruby HTML parser"
+HOMEPAGE="http://code.whytheluckystiff.net/hpricot/"
+SRC_URI="http://code.whytheluckystiff.net/dist/${ORIG_PN}-${PV}.tgz"
+
+DIFF_EXCLUDES="hpricot_scan.c"
+
+src_install() {
+	cd ${B}
+	dodir ${RUBY_SITELIB}
+	cp -rL lib/* ${D}${RUBY_SITELIB}
+}

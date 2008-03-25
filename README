@@ -1,0 +1,70 @@
+ruby-hpricot
+------------------------------------------
+Hpricot is a fast, flexible HTML parser written in C.  It's designed to 
+be very accommodating (like Tanaka Akira's HTree) and to have a very 
+helpful library (like some JavaScript libs -- JQuery, Prototype -- give 
+you.)  The XPath and CSS parser, in fact, is based on John Resig's 
+JQuery.
+
+Runtime requirements:
+  cygwin-1.5.25-7
+  ruby-1.8.6-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  binutils-20060817-1
+  cygport-0.3.8-1
+  gcc-core-3.4.4-3
+  ragel-5.25-1
+  rake-0.7.2-1
+
+Canonical website:
+  http://code.whytheluckystiff.net/hpricot/
+
+Canonical download:
+  http://code.whytheluckystiff.net/dist/
+
+-------------------------------------------
+
+Build instructions:
+  unpack ruby-hpricot-0.6-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./ruby-hpricot-0.6-X.cygport all
+
+This will create:
+  /usr/src/ruby-hpricot-0.6-X-src.tar.bz2
+  /usr/src/ruby-hpricot-0.6-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/ruby/site_ruby/1.8/hpricot.rb
+  /usr/lib/ruby/site_ruby/1.8/hpricot/blankslate.rb
+  /usr/lib/ruby/site_ruby/1.8/hpricot/builder.rb
+  /usr/lib/ruby/site_ruby/1.8/hpricot/elements.rb
+  /usr/lib/ruby/site_ruby/1.8/hpricot/htmlinfo.rb
+  /usr/lib/ruby/site_ruby/1.8/hpricot/inspect.rb
+  /usr/lib/ruby/site_ruby/1.8/hpricot/modules.rb
+  /usr/lib/ruby/site_ruby/1.8/hpricot/parse.rb
+  /usr/lib/ruby/site_ruby/1.8/hpricot/tag.rb
+  /usr/lib/ruby/site_ruby/1.8/hpricot/tags.rb
+  /usr/lib/ruby/site_ruby/1.8/hpricot/traverse.rb
+  /usr/lib/ruby/site_ruby/1.8/hpricot/xchar.rb
+  /usr/lib/ruby/site_ruby/1.8/i386-cygwin/hpricot_scan.so
+  /usr/share/doc/ruby-hpricot-0.6/COPYING
+  /usr/share/doc/ruby-hpricot-0.6/ChangeLog
+  /usr/share/doc/ruby-hpricot-0.6/README
+
+------------------
+
+Port Notes:
+
+----- version 0.6-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
