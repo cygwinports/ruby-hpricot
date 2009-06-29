@@ -1,5 +1,5 @@
 category: Ruby
-requires: cygwin ruby
+requires: ruby
 sdesc: "Ruby HTML parser"
 ldesc: "Hpricot is a fast, flexible HTML parser written in C.  It's 
 designed to be very accommodating (like Tanaka Akira's HTree) and to 
