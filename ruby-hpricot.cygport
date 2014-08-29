@@ -2,10 +2,14 @@ inherit rubygem
 
 NAME="ruby-hpricot"
 VERSION=0.8.6
-RELEASE=1
+RELEASE=2
 CATEGORY="Ruby"
 SUMMARY="Ruby HTML parser module"
 DESCRIPTION="Hpricot is a fast, flexible HTML parser written in C.  It's
 designed to be very accommodating (like Tanaka Akira's HTree) and to have
 a very helpful library (like some JavaScript libs -- JQuery, Prototype --
 give you.)  The XPath and CSS parser, in fact, is based on John Resig's JQuery."
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_hpricot_CONTENTS=${RUBYGEM_EXTDIR#/}" "${RUBYGEM_INSTDIR#/}" "${RUBYGEM_SPEC#/}
+ruby_hpricot_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
